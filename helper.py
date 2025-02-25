@@ -48,7 +48,7 @@ def _display_detected_frames(conf, model, st_frame, image, is_display_tracking=N
 
     # Display object tracking, if specified
     if is_display_tracking:
-        res = model.track(image, conf=conf, persist=True, tracker=tracker)
+        res = model.track(image, conf=conf, persist=True, tracker=tracker, classes=[0,2], show_conf=False, show_labels=False) # classes=[0,2] for person and car
     else:
         # Predict the objects in the image using the YOLOv8 model
         res = model.predict(image, conf=conf)
