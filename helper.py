@@ -54,7 +54,8 @@ def _display_detected_frames(conf, model, st_frame, image, is_display_tracking=N
         res = model.predict(image, conf=conf)
 
     # # Plot the detected objects on the video frame
-    res_plotted = res[0].plot()
+    #res_plotted = res[0].plot()
+    res_plotted = res[0].plot(conf=False, labels=False)
     st_frame.image(res_plotted,
                    caption='Detected Video',
                    channels="BGR",
