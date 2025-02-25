@@ -33,6 +33,7 @@ VIDEOS_DICT = {
     'video_3': VIDEO_DIR / 'video_3.mp4',
     'ped_1' : VIDEO_DIR / 'pedestrian_crossing.mp4',
     'ped_2' : VIDEO_DIR / 'pedestrian_crossing2.mp4',
+    'ped_3' : VIDEO_DIR / 'ped_3.mp4',
     'car_1' : VIDEO_DIR / 'cars.mp4',
     'car_2' : VIDEO_DIR / 'cars_trucks.mp4', 
 }
