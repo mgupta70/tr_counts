@@ -21,7 +21,9 @@ st.set_page_config(
 st.title("Object Detection And Tracking using YOLOv8")
 
 # Sidebar
+st.sidebar.image('assets/streetcounts_200x200.png')
 st.sidebar.header("ML Model Config")
+
 
 # Model Options
 model_type = st.sidebar.radio(
